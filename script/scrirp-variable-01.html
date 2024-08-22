@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        - 스크립트는 Document Controll 하는 역할 담당
+        = 필요에 따라서는 서버와 통신(비동기통신)
+        - 프로그래밍 언어이기 때문에 조건, 반복, 변수, 함수 가지게 ehla.
+        - 변수(var, let, const)
+        - 표준(ES6)
+        */
+        let msg = "섭섭이와 함께하는 즐거운 스크립트";
+        console.log(">>> debug - ", msg);
+        console.log(">>> debug type check - ", typeof msg);
+        msg = true;
+        console.log(">>> debug - ", msg);
+        console.log(">>> debug type check - ", typeof msg);
+        msg = "선언된 변수가 있고 같은 이름의 변수를 선언하더라도 에러가 발생하지 않는다";
+        console.log(">>> debug - ", msg);
+        const data = "jslim";
+        // data = "reassign"; -- error
+        console.log(">>> debug data - ", data);
+        console.log("");
+        console.log(">>>> 스크립트 변수 타입 <<<<");
+        let userAge = 10;
+        console.log(">>> debug type check - ", typeof userAge);
+        let isMarried = false;
+        console.log(">>> debug type check - ", typeof isMarried);
+    </script>
+</body>
+</html>

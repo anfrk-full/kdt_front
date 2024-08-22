@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!--
+    jQuery : DOM을 컨트롤 할 수 있는 쉬운 방법을 제공
+    - $('css selector').함수();
+    - $(document).ready(function () { }); == window.onload = function() { }
+    -->
+</head>
+<body>
+    
+    <h1>JQuery를 테스트합니다.</h1>
+    <h1 id="target">JQuery를 테스트합니다.</h1>
+    <button id="btn">BUTTON</button>
+    <div id="result"></div>
+    <script>
+        $(document).ready(function() {
+            $('h1').css('color', 'red');
+            $("#target").css('color', 'orange');
+            $("#btn").click(function(e) {
+                $("#result").append("<input type='text'>");
+            });
+        });
+    </script>
+</body>
+</html>

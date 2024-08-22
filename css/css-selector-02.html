@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: yellowgreen;
+        }
+        h1 {
+            background-color: black;
+            color: whitesmoke;
+        }
+        h2 {
+            background-color: wheat;
+            color:darkorchid
+        }
+        h3 {
+            background-color: aquamarine;
+        }
+        p {
+            background-color: brown;
+        }
+        p.class1 {
+            background-color: yellow;
+        }
+
+        h1#id1{
+            background-color: rebeccapurple;
+        }
+        input[name="id"]{
+            background-color:yellow;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    선택자란?
+    : 문서에 정의 요소를 접근하기위해서 사용하는 방법(css3, javascript)
+    종류
+    : 전체 선택자 * {속성선언}
+    : 타입 선택자 tag {속성선언}
+    : 클래스 선택자 .클래스명 {속성선언}
+    : 아이디 선택자 #아이디명 {속성선언}
+    : 속성 선택자 [속성=값] {속성선언} 
+    -->
+
+    <h1>Type Selector</h1>
+    <h2>Type Selector</h2>
+    <h3>Type Selector</h3>
+    <p>각 요소에 다르게 적용되는걸 확인해 보자</p>
+
+    <h3>
+        <p class="class1">class 선택자를 이용한 디자인 구성</p>
+    </h3>
+
+    <h1 id="id1">id 선택자를 이용한 디자인 구성</h1>
+
+    <input type="text" name="id"><br>
+    <input type="password" name="password">
+
+</body>
+</html>
